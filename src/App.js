@@ -20,9 +20,12 @@ const App = () => {
   return (
     <div className='content'>
       <pre>
-        <h2>Checking Password Strength in ReactJS</h2>
-        <span>Enter Password: </span><input type='text' 
-          onChange={(e) => validate(e.target.value)}></input> <br />
+        <h2>Checking Password<br />Strength in ReactJS</h2>
+        <p>Enter Password:</p> 
+          <input 
+          type='text' 
+          onChange={(e) => validate(e.target.value)}>
+          </input> <br />
           <div className='message'>
         {errorMessage}
         </div>
